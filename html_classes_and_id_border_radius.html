@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>HTML classes and ids</title>
+  <style>
+  .city{
+   background-color:blue;
+   color:white;
+   border:5px solid black;
+   margin:10px;
+   padding:10px;
+  }
+  .city h3{
+  font-family:sans-serif;
+  }
+  .city p{
+  font-family:monospace;
+  }
+  .note{
+  color:yellow;
+  }
+  #unique{
+  background-color:orange;
+  padding:10px;
+  margin:10px;
+  border:5px solid black;
+  border-radius:100px;
+  }
+  #para{
+  font-family:monospace;
+  }
+  </style>
+</head>
+<body onload="welcomeMessage()">
+   <h1 id="load"></h1>
+   <h3 id="class_js">HTML classes</h3>
+   <button onclick="pageContent()">More explaination about content</button>
+     <div class="city">
+        <center><h3>Delhi</h3></center>
+        <center><p>Delhi is capital of India</p></center>
+     </div>
+	 <div class="city">
+	    <center><h3><span class="note">Andhra Prdaesh</span></h3>
+	    <center><p>Amaravathi is the capital of <span style="color:red">Andhra Pradesh<span></p></center>
+	 </div>
+	 <div id="unique">
+	    <center><h3>This is an example of id</h3></center>
+		<center><p id="para">ID is unique for an element .It can be used only once in a page.</p></center>
+		<center><h6 style="font-size:17px">We used border radius to create rounded edges</h6></center>
+		<center><p id="textchanger">This is the script we will be changing using javascript</p></center>
+	 </div>
+	 <button onclick="changeText()" >Change Text</button>
+	 <script>
+	  function changeText()
+	  {
+	  document.getElementById("textchanger").innerHTML="Have a nice day!";
+	  
+	  }
+	  function welcomeMessage()
+	  {
+	  document.getElementById("load").innerHTML="Welcome to our website.....";
+	  
+	  }
+	   function pageContent()
+	  {
+	  document.getElementById("class_js").innerHTML="This page explains html classes,ids,border radius and javascript basics";
+	  
+	  }
+	 
+	 </script>
+</body>
+</html>
