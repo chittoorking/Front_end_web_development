@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>CSS Advanced</title>
+  <style>
+   h1{
+     text-shadow:4px 2px 10px red,0 0 2px blue;/*3rd 2px is blur*/
+	 color:white;
+   }
+   h2{
+      text-shadow:2px ;/*This will do nothing */
+   }
+   .shadow{
+       background:yellow;
+       border:3px solid black;
+	   width:400px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	   transform:translate(100px,-20px);
+	  /*transform:rotate(-30deg);*/
+	  
+   }
+   .shadowRotated{
+       background:orange;
+       border:3px solid grey;
+	   width:400px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	  /* transform:translate(220px,130px);*/
+	  transform:rotate(20deg);
+	  
+   }
+   .shadow p{
+       padding:20px;
+   }
+   .scale
+   {
+       background:green;
+       border:3px solid grey;
+	   width:300px;
+	   margin:0px
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+       transform:scale(1,3);
+	   /*transform:scale(0.5,0.5); Use this when you need to scale down */
+   }
+   .threeD{
+       background:orange;
+       border:3px solid grey;
+	   width:400px;
+	   height:100px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	  
+   }
+   .threeDTransformedX{
+       background:orange;
+       border:3px solid grey;
+	   width:400px;
+	   height:100px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	   transform:rotateX(150deg);
+   }
+   .threeDTransformedY{
+       background:orange;
+       border:3px solid grey;
+	   width:400px;
+	   height:100px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	   transform:rotateY(150deg);
+   }
+   .threeDTransformedZ{
+       background:orange;
+       border:3px solid grey;
+	   width:400px;
+	   height:100px;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	   transform:rotateZ(150deg);
+   }
+   .transition{
+       background:grey;
+       border:3px solid blue;
+	   width:400px;
+	   height:100px;
+	   color:orange;
+	   box-shadow:10px 10px 10px red,10px 10px 10px grey;
+	   transition:width 2s,height 2s;
+	   }
+	  .transition:hover
+	  {
+	  width:300px;
+	  height:500px;
+	  }
+   @font-face {
+     font-family: myFirstFont;
+     src: url(sansation_light.woff);
+	 font-weight:bold;
+	 font-style:italic;
+   }
+
+   .fontface {
+     font-family: myFirstFont;
+   }
+  </style>
+</head>
+<body>
+  <h1 class="rotate">css shadow1</h1>
+  <h2>css shadow2</h2>
+  <div class="shadow">
+  <p>This is a Paragraph</p>
+  </div><br><br>
+  <div class="shadowRotated">
+  <p>This is a Rotated</p>
+  </div>
+  <h2>Font face<h2>
+  <p>This is normal text</p>
+  <p class="fontface">This is font face text</p>
+  <p>Search for css font face styles and go to w3schools to get font faces</p>
+  <br><br><br><br><div class="scale">
+  <p>This is a an example of css scale</p>
+  </div>  
+  <br><br>
+  <h2>CSS 3D</h2>
+  <div class="threeD">
+  <p>This is a normal one </p>
+  </div>
+  <div class="threeDTransformedX">
+  <p>This is a 3-D transformed</p>
+  </div>
+  <div class="threeDTransformedY">
+  <p>This is a 3-D transformed</p>
+  </div><br><br><br><br>
+  <div class="threeDTransformedZ">
+  <p>This is a 3-D transformed</p>
+  </div>
+  <br><br><br><br>
+  <h2>CSS Animation</h2>
+  <div class="transition">
+  <p>This is transition</p>
+  </div>
+</body>
+</html>

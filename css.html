@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Page Layout</title>
+   <style>
+   *{
+      
+   box-sizing:border-box;
+   }
+   body{
+    font-family:Arial,Helvetica,san-serif;
+   }
+   /*Style the header*/
+   header{
+   background-color:#666;
+   padding:10px;
+   margin:10px;
+   text-align:center;
+   font-size:35px;
+   color:#ffff;
+   
+   }
+   /*navigation design*/
+   nav{
+   float:left;
+   width:30%;
+   height:200px;
+   background-color:green;
+   padding:20px;
+   }
+   nav ul{
+   list-style-type:none;
+   
+   }
+   nav a{
+   text-decoration:none;
+   }
+   article{
+      float:left;
+	  padding:20px;
+	  width:70%;
+	  background-color:#f1f1f1;
+	  height:200px;
+	  color:black;
+   }
+   section::after{
+   content:"";
+   display:table;
+   clear:both;
+   }
+  footer{
+  
+  background-color:#777;
+  padding:10px;
+  text-align:center;
+  
+  color:white;
+  }
+  footer.under{
+  text-decoration:none;
+  }
+   </style>
+</head>
+<body>
+<h2>HTML/CSS Layout</h2>
+<p>This is a paragraph</p>
+<p>This is second paragraph</p>
+<header>
+   <h2> Cities </h2>
+ </header>
+<section>
+   <nav>
+      <ul>
+	     <li> <a href="#"> Delhi</li>
+		 <li><a href="#">Bangalore</li>
+		 <li><a href="#">Hyderabad</li>
+	  </ul>
+   </nav>
+<hr>
+<article>
+   <h1 style="color:orange; font-family:sans-serif; background-color:red;">Delhi</h1>
+   <p>Delhi is capital of India</p>
+</article>
+</section>
+
+<footer>
+   <p>This is footer</p>
+</footer>
+</body>
+</html>

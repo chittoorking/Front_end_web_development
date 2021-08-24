@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>CSS navigation</title>
+  <style>
+    ul{
+	  list-style-type:none;
+	  margin-left:0;
+	  overflow:hidden;
+	  }
+	  a{
+	  float:left;
+	  }
+	  a{
+	  padding:10px;
+	  background:yellow;
+	  text-decoration:none;
+	  color:red;
+	  display:block;
+	  }
+	  a:hover
+	  {
+	  background-color:orange;
+	  color:green;
+	  }
+	  .dropdown
+	  {
+	  position:relative;
+	  display:inline-block;
+	  }
+	  .dropdwon-content
+	  {
+	  display:none;
+	  position:absolute;
+	  background:grey;
+	  width:120px;
+	  box-shadow:0px 8px 11px 0px;rgba(0,0,0,0.2);
+	  padding:12px 16px;
+	  z-index=1;
+	  }
+	  .dropdown:hover .dropdwon-content
+	  {
+	  display:block;
+	  }
+  </style>
+</head>
+<body>
+     <h1>css nav</h1>
+	 <ul>
+	   <a href="www.facebook.com"><li>HOME</li></a>
+	   <a href="www.wikipedia.com"><li>NEWS</li></a>
+	   <a href="www.linkedin.com"><li>CONTACT</li></a>
+	   <a href="www.google.com"><li>ABOUT</li></a>
+	 </ul><br>
+	 <div class="dropdown">
+	  <span>Mouse Over </span>
+	  <div class="dropdwon-content">
+	    <p>Hello World</p>
+	  </div>
+	 </div>
+</body>
+</html>
